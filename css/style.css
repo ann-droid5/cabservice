@@ -8387,7 +8387,9 @@ h1, h2, h3, h4, h5,
 
 .carousel-overlay h1 {
   font-weight: 700; /* bold for the whole h1 */
-  font-size: 3rem;  
+  font-size: 4vw;  
+  max-font-size: 44px;
+  min-font-size: 20px;
 }
 
 .carousel-overlay h1 span {
@@ -8395,22 +8397,56 @@ h1, h2, h3, h4, h5,
   color: #fff;       /* optional, just to be sure */
 }
 
-
 .carousel-overlay p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
 
 @media (max-width: 768px) {
   .carousel-overlay h1 {
-    font-size: 1.8rem;
+    font-size: 5vw;
   }
 
   .carousel-overlay p {
-    font-size: 1rem;
+    font-size: 2vw;
   }
 }
 
+.carousel-overlay .btn {
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.carousel-overlay .btn:hover {
+  transform: translateY(-3px);
+  background-color: #003366; /* or your preferred dark shade */
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+  .carousel-overlay .btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .carousel-overlay .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.6rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .carousel-overlay .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
 
 
     
