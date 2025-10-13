@@ -5412,6 +5412,7 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
+
 .bg-light {
   background-color: #f8f9fa !important; }
 
@@ -8354,41 +8355,66 @@ h1, h2, h3, h4, h5,
   font-weight: 800;
   font-size: 20px;
   text-transform: uppercase; }
-
-.hero-wrap {
+.hero-img {
   width: 100%;
-  height: 850px;
-  position: inherit;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; }
-  @media (max-width: 1199.98px) {
-    .hero-wrap {
-      background-position: center center !important; } }
-  .hero-wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: .3;
-    background: #000000;
-    height: 850px; }
-  @media (max-width: 991.98px) {
-    .hero-wrap {
-      height: 1150px; }
-      .hero-wrap .overlay {
-        height: 1150px; } }
-  .hero-wrap.hero-wrap-2 {
-    height: 600px !important;
-    position: relative; }
-    .hero-wrap.hero-wrap-2 .overlay {
-      width: 100%;
-      opacity: .3;
-      height: 600px; }
-    .hero-wrap.hero-wrap-2 .slider-text {
-      height: 600px !important; }
+  max-height: 600px; /* adjust as needed */
+  object-fit: cover;
+}
+.hero-wrap {
+  margin-bottom: 0;   /* remove default section margin */
+  padding-bottom: 0;  /* remove default padding */
+}
+
+#heroCarousel .carousel-inner {
+  margin-bottom: 0;   /* remove any inner gap */
+  padding-bottom: 0;
+}
+
+.carousel-overlay {
+  background: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* keep original font */
+}
+
+.carousel-overlay h1 {
+  font-weight: 700; /* bold for the whole h1 */
+  font-size: 3rem;  
+}
+
+.carousel-overlay h1 span {
+  font-weight: 700; /* keep same as h1 */
+  color: #fff;       /* optional, just to be sure */
+}
+
+
+.carousel-overlay p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-overlay p {
+    font-size: 1rem;
+  }
+}
+
+
+
+    
+    
 
 .slider-text {
   height: 850px; }
@@ -8454,7 +8480,7 @@ h1, h2, h3, h4, h5,
     line-height: .8; }
 
 .featured-top {
-  margin-top: -250px; }
+  margin-top: -50px; }
 
 .request-form {
   background: #fff;
@@ -9251,6 +9277,7 @@ textarea.form-control {
 }
 
 
+
 .ftco-footer {
   font-size: 16px;
   background: #002752;
@@ -9581,6 +9608,7 @@ textarea.form-control {
 
 
 #why-choose-us {
+  margin-top: 0;
   padding: 80px 0;
   background: #fefefe /* light neutral background, blends with page */
 }
