@@ -8413,40 +8413,26 @@ h1, h2, h3, h4, h5,
 }
 
 .carousel-overlay .btn {
-  font-size: 1.1rem;
-  padding: 0.9rem 2.2rem;
-  border-radius: 50px;
+  font-size: 0.8rem;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
   transition: all 0.3s ease;
 }
+@media (max-width: 576px) {
+  .carousel-overlay .btn {
+    font-size: 0.75rem;      /* smaller text */
+    padding: 0.35rem 1rem;   /* reduce button height and width */
+  }
+}
+
 
 .carousel-overlay .btn:hover {
   transform: translateY(-3px);
   background-color: #003366; /* or your preferred dark shade */
 }
 
-/* Tablet adjustments */
-@media (max-width: 992px) {
-  .carousel-overlay .btn {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-  }
-}
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .carousel-overlay .btn {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.6rem;
-  }
-}
 
-/* Small phones */
-@media (max-width: 480px) {
-  .carousel-overlay .btn {
-    font-size: 0.8rem;
-    padding: 0.5rem 1.2rem;
-  }
-}
 
 
     
