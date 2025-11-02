@@ -1312,6 +1312,7 @@ textarea.form-control {
 	@include media-breakpoint-down(sm){
 		padding: 6em 0;
 	}
+	
 }
 
 .ftco-no-pt{
@@ -1321,6 +1322,9 @@ textarea.form-control {
 	padding-bottom: 0;
 }
 
+.ftco-bg-white {
+	background: #f7f6f6;
+}
 .ftco-bg-dark {
 	background: #3c312e;
 }
