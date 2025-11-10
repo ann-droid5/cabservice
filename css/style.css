@@ -8184,12 +8184,9 @@ h1, h2, h3, h4, h5,
   color: #1089ff !important; }
 
 .ftco-navbar-light {
-  background: transparent !important;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  z-index: 3; }
+  background: #ffffff;
+  position: relative;
+  top: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
       background: #ffffff !important;
@@ -8362,10 +8359,11 @@ h1, h2, h3, h4, h5,
   max-height: 600px; /* adjust as needed */
   object-fit: cover;
 }
+/* Push hero section below the fixed navbar */
 .hero-wrap {
-  margin-bottom: 0;   /* remove default section margin */
-  padding-bottom: 0;  /* remove default padding */
+   /* adjust based on your navbar height */
 }
+
 
 #heroCarousel .carousel-inner {
   margin-bottom: 0;   /* remove any inner gap */
