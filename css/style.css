@@ -10237,3 +10237,9 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.icon-feature {
+  width: 50px;     /* adjust size */
+  height: 50px;
+  object-fit: contain;
+}
