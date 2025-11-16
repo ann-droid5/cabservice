@@ -3523,7 +3523,9 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center; 
+  justify-content: flex-end !important;
+}
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -9446,7 +9448,7 @@ textarea.form-control {
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
-  color: #1089ff;
+  color: #3AA857;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9562,7 +9564,7 @@ textarea.form-control {
     color: #000000; }
   .testimony-wrap .position {
     font-size: 16px;
-    color: #1089ff; }
+    color: #3AA857; }
 
 @media (max-width: 767.98px) {
   .about-image {
